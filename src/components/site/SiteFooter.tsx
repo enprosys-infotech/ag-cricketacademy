@@ -15,7 +15,7 @@ export function SiteFooter() {
           </p>
         </div>
         <div className="md:col-span-3">
-          <h4 className="eyebrow mb-4">Explore</h4>
+          <h4 className="eyebrow mb-4 text-gold">Explore</h4>
           <ul className="space-y-2 text-sm text-night-foreground/75">
             {nav.map((n) => (
               <li key={n.to}>
@@ -27,7 +27,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div className="md:col-span-2">
-          <h4 className="eyebrow mb-4">Get Started</h4>
+          <h4 className="eyebrow mb-4 text-gold">Get Started</h4>
           <ul className="space-y-2 text-sm text-night-foreground/75">
             <li>
               <Link to="/register" className="hover:text-gold">
@@ -57,7 +57,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div className="md:col-span-3">
-          <h4 className="eyebrow mb-4">Contact</h4>
+          <h4 className="eyebrow mb-4 text-gold">Contact</h4>
           <ul className="space-y-3 text-sm text-night-foreground/75">
             <li className="flex gap-2">
               <MapPin className="h-4 w-4 mt-0.5 text-gold" />

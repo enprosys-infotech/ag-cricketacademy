@@ -41,15 +41,15 @@
 
 :root {
   --radius: 0.375rem;
-  /* Brand color values are provisional until the official guideline assets are supplied. */
-  --pitch-deep: #17385f;
-  --pitch: #34764d;
-  --night: #151c24;
+  /* Brand blue and lime match the approved logo; supporting shades preserve legibility. */
+  --pitch-deep: #124388;
+  --pitch: #617a26;
+  --night: #15191f;
   --night-foreground: #ffffff;
-  --gold: #2b6f9f;
-  --gold-foreground: #ffffff;
+  --gold: #a2bb43;
+  --gold-foreground: #102a48;
 
-  --background: #f6f8fa;
+  --background: #f7f9f4;
   --foreground: #182432;
   --card: #ffffff;
   --card-foreground: #182432;
@@ -57,16 +57,16 @@
   --popover-foreground: #182432;
   --primary: var(--pitch-deep);
   --primary-foreground: #ffffff;
-  --secondary: #eaf0f4;
+  --secondary: #eef2e5;
   --secondary-foreground: var(--pitch-deep);
-  --muted: #edf1f3;
-  --muted-foreground: #5b6874;
+  --muted: #edf1e8;
+  --muted-foreground: #56636b;
   --accent: var(--gold);
   --accent-foreground: var(--gold-foreground);
   --destructive: #b42318;
   --destructive-foreground: #ffffff;
-  --border: #d7dfe5;
-  --input: #cbd5dc;
+  --border: #d7dfcf;
+  --input: #c6d0bf;
   --ring: var(--pitch);
 
   --overlay-hero: linear-gradient(
@@ -121,7 +121,7 @@
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: var(--color-pitch);
 }
 @utility container-site {
   margin-inline: auto;

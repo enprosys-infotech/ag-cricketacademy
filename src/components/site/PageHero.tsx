@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import hero from "@/assets/hero-stadium.jpg";
 import { site } from "@/lib/site";
 
@@ -11,9 +12,15 @@ export function PageHero({
   title: string;
   intro: string;
 }) {
+  const { pathname } = useLocation();
+
   useEffect(() => {
     document.title = `${title} | ${site.stadium}, Indore`;
   }, [title]);
+
+  if (pathname !== "/") {
+    return null;
+  }
 
   return (
     <section className="relative isolate flex min-h-[54vh] items-end overflow-hidden bg-night text-night-foreground md:min-h-[60vh]">
@@ -27,7 +34,7 @@ export function PageHero({
       <div className="absolute inset-0 -z-10 bg-hero-overlay" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-night/45 via-night/10 to-transparent" />
       <div className="container-site pb-14 pt-36 animate-rise md:pb-20">
-        <p className="eyebrow inline-flex items-center gap-3">
+        <p className="eyebrow inline-flex items-center gap-3 text-gold">
           <span className="h-px w-8 bg-gold" aria-hidden="true" />
           {eyebrow}
         </p>

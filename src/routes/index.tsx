@@ -53,7 +53,7 @@ export default function Index() {
         />
         <div className="absolute inset-0 -z-10 bg-hero-overlay" />
         <div className="container-site pb-24 pt-40">
-          <p className="eyebrow animate-rise">{site.location}</p>
+          <p className="eyebrow animate-rise text-gold">{site.location}</p>
           <h1 className="mt-5 max-w-4xl font-display text-5xl font-semibold leading-[1.02] sm:text-7xl lg:text-8xl animate-rise [animation-delay:120ms]">
             Where talent meets discipline. Where champions begin.
           </h1>
@@ -166,7 +166,7 @@ export default function Index() {
       <section className="bg-night text-night-foreground">
         <div className="container-site grid gap-14 py-24 md:py-32 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <p className="eyebrow">{site.academy}</p>
+            <p className="eyebrow text-gold">{site.academy}</p>
             <h2 className="mt-4 font-display text-4xl font-semibold md:text-5xl">
               Training for every stage of the journey.
             </h2>

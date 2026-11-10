@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { nav, site } from "@/lib/site";
@@ -6,6 +6,7 @@ import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
+  const { pathname } = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -29,7 +30,7 @@ export function SiteHeader() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled || open
+        scrolled || open || pathname !== "/"
           ? "bg-night/95 backdrop-blur border-b border-night-foreground/10 py-3"
           : "bg-transparent py-5",
       )}
