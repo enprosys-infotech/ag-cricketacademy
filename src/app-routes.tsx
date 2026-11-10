@@ -1,22 +1,22 @@
 import { type RouteObject } from "react-router-dom";
 import { AppLayout, NotFoundPage } from "@/components/site/AppRouteShell";
-import AboutPage from "@/routes/about";
-import AcademyPage from "@/routes/academy";
-import BookPage from "@/routes/book";
-import BookingPolicyPage from "@/routes/booking-policy";
-import CoachesPage from "@/routes/coaches";
-import ContactPage from "@/routes/contact";
-import EventsPage from "@/routes/events";
-import FounderPage from "@/routes/founder";
-import GalleryPage from "@/routes/gallery";
-import HomePage from "@/routes";
-import LeadershipPage from "@/routes/leadership";
-import MediaPage from "@/routes/media";
-import MissionPage from "@/routes/mission";
-import PrivacyPage from "@/routes/privacy";
-import RegisterPage from "@/routes/register";
-import StadiumPage from "@/routes/stadium";
-import TermsPage from "@/routes/terms";
+import AboutPage from "@/pages/about";
+import AcademyPage from "@/pages/academy";
+import BookPage from "@/pages/book";
+import BookingPolicyPage from "@/pages/booking-policy";
+import CoachesPage from "@/pages/coaches";
+import ContactPage from "@/pages/contact";
+import EventsPage from "@/pages/events";
+import FounderPage from "@/pages/founder";
+import GalleryPage from "@/pages/gallery";
+import HomePage from "@/pages";
+import LeadershipPage from "@/pages/leadership";
+import MediaPage from "@/pages/media";
+import MissionPage from "@/pages/mission";
+import PrivacyPage from "@/pages/privacy";
+import RegisterPage from "@/pages/register";
+import StadiumPage from "@/pages/stadium";
+import TermsPage from "@/pages/terms";
 
 export const appRoutes: RouteObject[] = [
   {
