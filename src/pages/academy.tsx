@@ -26,7 +26,7 @@ export default function AcademyPage() {
         </div>
         <div className="md:col-span-3">
           <p className="eyebrow">Development pathways</p>
-          <h2 className="mt-3 font-display text-4xl font-semibold text-primary md:text-5xl">
+          <h2 className="mt-3 font-display text-4xl font-bold text-primary md:text-5xl">
             Find your next step in the game.
           </h2>
           <p className="mt-4 max-w-2xl leading-7 text-muted-foreground">
@@ -38,7 +38,7 @@ export default function AcademyPage() {
               <li key={program.name} className="flex gap-4 py-5">
                 <Check className="mt-1 h-5 w-5 shrink-0 text-pitch" aria-hidden="true" />
                 <div>
-                  <h3 className="font-semibold text-foreground">{program.name}</h3>
+                  <h3 className="font-medium text-foreground">{program.name}</h3>
                   <p className="mt-1 text-sm leading-6 text-muted-foreground">{program.desc}</p>
                 </div>
               </li>
